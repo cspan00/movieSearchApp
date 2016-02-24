@@ -6,19 +6,18 @@ app.config(function($routeProvider, $locationProvider){
 
   $routeProvider
     .when("/:title", {
-      templateUrl: 'partails/results.html',
+      templateUrl: 'partials/results.html',
       controller: 'ResultsController'
+      // css: 'css/main.css'
     })
 })
 
 app.controller("ResultsController", function($scope, $location, $routeParams, $http){
-  // $scope.output = $routeParams.title;
   var title = $routeParams.title
   var movies = [];
   $scope.movies = movies;
 
   $http.get('http://www.omdbapi.com/?s='+title+'&y=&plot=short&r=json').then(function(data){
-    // data["data"]["Search"]["Title"]
     data["data"]["Search"].forEach(function(movie, i){
       var movie = {};
       movie.title = data["data"]["Search"][i]["Title"]
