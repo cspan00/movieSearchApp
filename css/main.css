@@ -1,6 +1,6 @@
 .formContainer{
   text-align: center;
-  height: 40vh;
+  min-height: 40vh;
   width: 100vw;
   border-bottom: 1px solid gray;
 }
