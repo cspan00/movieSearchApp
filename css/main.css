@@ -10,7 +10,6 @@
   border-bottom: 1px solid gray;
   margin: 0 auto;
 }
-
 .btn {
   margin-top: 15px;
   background: #2d90d6;
@@ -19,12 +18,11 @@
 .btn span {
   padding-left: 10px;
 }
-
-img {
-  width: 100px;
-  height: 100px;
+.imageSize{
+  width: 150px;
+  height: 200px;
 }
-
-.blueYear {
-  color: blue;
-}
+/*img:first-child{
+  width: 150px;
+  height: 200px;
+}*/
