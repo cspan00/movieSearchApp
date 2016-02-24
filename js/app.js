@@ -15,7 +15,7 @@ app.controller("ResultsController", function($scope, $location, $routeParams, $h
   // $scope.output = $routeParams.title;
   var title = $routeParams.title
   var movies = [];
-  $scope.movies = movies; 
+  $scope.movies = movies;
 
   $http.get('http://www.omdbapi.com/?s='+title+'&y=&plot=short&r=json').then(function(data){
     // data["data"]["Search"]["Title"]
@@ -27,7 +27,6 @@ app.controller("ResultsController", function($scope, $location, $routeParams, $h
       movie.poster = data["data"]["Search"][i]["Poster"]
       movies.push(movie)
     })
-    console.log(movies);
   });
 
 })

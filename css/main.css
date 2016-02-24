@@ -4,6 +4,12 @@
   width: 100vw;
   border-bottom: 1px solid gray;
 }
+.resultsContainer{
+  min-height: 40vh;
+  width: 50vw;
+  border-bottom: 1px solid gray;
+  margin: 0 auto;
+}
 
 .btn {
   margin-top: 15px;

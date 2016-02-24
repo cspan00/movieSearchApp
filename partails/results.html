@@ -1,6 +1,15 @@
-<div ng-repeat="movie in movies">
-  <li>
-    {{movie.title}}
-  </li>
-
+<div class="resultsContainer">
+  <div class="list-group">
+    <div ng-repeat="movie in movies">
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item heading">
+          {{movie.title}}
+          <img src="{{movie.poster}}"></img>
+        </h4>
+        <p class="list-group-item-text">
+          {{movie.year}}
+        </p>
+      </a>
+    </div>
+  </div>
 </div>
