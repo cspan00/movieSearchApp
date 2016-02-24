@@ -1,0 +1,15 @@
+.formContainer{
+  text-align: center;
+  height: 40vh;
+  width: 100vw;
+  border-bottom: 1px solid gray;
+}
+
+.btn {
+  margin-top: 15px;
+  background: #2d90d6;
+  color: white;
+}
+.btn span {
+  padding-left: 10px;
+}
